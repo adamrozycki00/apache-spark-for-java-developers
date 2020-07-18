@@ -39,7 +39,9 @@ public class Main {
                 .groupByKey()
                 .foreach(tuple -> System.out.println(tuple._1 + " has " + Iterables.size(tuple._2) + " instances"));
 
-        sc.close();
+        sc.parallelize(inputData)
+                .flatMap(str -> List.of(str.split(" ")).iterator())
+                .foreach(word -> System.out.println(word));
 
     }
 }
