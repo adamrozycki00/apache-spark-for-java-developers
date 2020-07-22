@@ -7,6 +7,7 @@ import scala.Tuple2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import static com.config.GlobalSettings.setHadoopAndLogger;
 
@@ -58,6 +59,8 @@ public class ViewingFigures {
                 .map(tpl -> String.format("%-38s %4d", tpl._2 + ":", tpl._1))
                 .take(10)
                 .forEach(System.out::println);
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
     }
 
     private static JavaPairRDD<Integer, String> setUpTitlesDataRdd(JavaSparkContext sc, boolean testMode) {

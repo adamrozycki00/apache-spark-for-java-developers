@@ -11,6 +11,7 @@
 
     <modules>
         <module>module-1-spark-core</module>
+        <module>module-2-spark-sql</module>
     </modules>
 
     <properties>
@@ -52,10 +53,6 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_${scala.version}</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.spark</groupId>-->
-<!--            <artifactId>spark-sql_${scala.version}</artifactId>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
