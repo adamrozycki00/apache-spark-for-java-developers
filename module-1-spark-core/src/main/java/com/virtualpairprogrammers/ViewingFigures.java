@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static com.config.GlobalSettings.setHadoopAndLogger;
+import static com.virtualpairprogrammers.config.GlobalSettings.setHadoopAndLogger;
 
 /**
  * This class is used in the chapter late in the course where we analyse viewing figures.

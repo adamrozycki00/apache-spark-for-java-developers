@@ -6,7 +6,7 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
-import static com.config.GlobalSettings.setHadoopAndLogger;
+import static com.virtualpairprogrammers.config.GlobalSettings.setHadoopAndLogger;
 
 public class Main {
 
